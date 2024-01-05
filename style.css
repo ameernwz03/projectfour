@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: red;
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 5px 25px;
+  min-height: 100dvh;
+}
+.navbar {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+
+}
+.nav {
+    position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: #fff;
+    margin-bottom: 30px;
+  min-height: 100px;
+  box-shadow: 3px 3px 7px 2px #b7aeae99;
+}
+
+.links-container li {
+  cursor: pointer;
+  padding: 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+.hero-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.hero-content {
+ display: flex;
+ flex-direction: column;
+}
+
+.tag {
+    align-self: flex-start;
+  background-color: green;
+  
+  padding: 8px;
+  color: #eaeaea;
+  text-transform: capitalize;
+}
+.hero-content > h1 {
+  background-color: pink;
+  font-size: 72px;
+  color: #eaeaea;
+  text-transform: capitalize;
+}
+.hero-content > h5 {
+  font-size: 16px;
+  padding: 10px 2px;
+}
+.hero-content button {
+    align-self: flex-start;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.sec-hero {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.cta {
+  margin: 20px 0px;
+  padding: 15px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+  transition: all 0.4s ease-in;
+  cursor: pointer;
+}
+.cta h3 {
+  font-size: 22px;
+}
+.cta:hover {
+  background-color: #149f39;
+  padding: 15px 5px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 1px #000000bf;
+}
+.divider{
+    margin: 30px 0px;
+    border: 1px solid #828282d4;
+}
+.menu{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.grid{
+    display: grid;
+    grid-template-areas: "G1 G1 G2 G3" "G1 G1 G2 G7" "G4 G5 G6 G7" ;
+}
+.item1{
+   grid-area: G1; 
+}
+.item2{
+    grid-area: G2; 
+}
+.item3{
+    grid-area: G3; 
+}
+.item4{
+    grid-area: G4; 
+}
+.item5{
+    grid-area: G5; 
+}
+.item6{
+    grid-area: G6; 
+}
+.item7{
+    grid-area: G75;
+}
