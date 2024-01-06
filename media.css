@@ -1,0 +1,21 @@
+@media screen and (max-width: 946px){
+    .links-container{
+        display: none;
+      }
+      .bar{
+        display: block;
+      }
+      .hero-sec{
+        flex-direction: column;
+      }
+      .cta{
+        padding: 0px 0px;
+        gap: 5px;
+      }
+}
+@media screen and (max-width: 740px){
+    .footer{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+      }
+    }
