@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Montserrat:wght@500&family=Noto+Sans:wght@300&family=PT+Serif:ital@1&family=Raleway:wght@300;400&family=Rubik+Doodle+Triangles&family=Rubik+Glitch&family=Rubik:wght@300&family=Sevillana&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
 }
 .container {
-  background-color: red;
+  /* background-color: red; */
   max-width: 1250px;
   margin: 0 auto;
   padding: 5px 25px;
@@ -17,15 +19,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
-
 }
 .nav {
-    position: sticky;
+  position: sticky;
   top: 0;
   z-index: 1;
   background-color: #fff;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
   min-height: 100px;
   box-shadow: 3px 3px 7px 2px #b7aeae99;
 }
@@ -36,6 +36,10 @@
   text-decoration: none;
   display: inline-block;
 }
+.bar {
+  display: none;
+  font-size: 28px;
+}
 .hero-sec {
   display: flex;
   align-items: center;
@@ -43,22 +47,23 @@
   gap: 20px;
 }
 .hero-content {
- display: flex;
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .tag {
-    align-self: flex-start;
+  align-self: flex-start;
   background-color: green;
-  
+
   padding: 8px;
   color: #eaeaea;
   text-transform: capitalize;
 }
 .hero-content > h1 {
-  background-color: pink;
-  font-size: 72px;
-  color: #eaeaea;
+  /* background-color: pink; */
+  font-size: 78px;
+  color: #303030;
+  font-weight: 600;
   text-transform: capitalize;
 }
 .hero-content > h5 {
@@ -66,12 +71,17 @@
   padding: 10px 2px;
 }
 .hero-content button {
-    align-self: flex-start;
+  align-self: flex-start;
   padding: 15px 35px;
-  border: none;
+  border: 1px solid #303030;
   border-radius: 30px;
-  font-size: 14px;
+  font-size: 16px;
   cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.hero-content button:hover {
+  background-color: green;
+  color: #fff;
 }
 .sec-hero {
   display: flex;
@@ -85,8 +95,8 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  gap: 20px;
-  transition: all 0.4s ease-in;
+  gap: 50px 0px;
+  transition: all 0.3s ease-in;
   cursor: pointer;
 }
 .cta h3 {
@@ -94,43 +104,109 @@
 }
 .cta:hover {
   background-color: #149f39;
-  padding: 15px 5px;
+  transform: translatey(-8px);
+
   border-radius: 5px;
   box-shadow: 0 4px 8px 1px #000000bf;
 }
-.divider{
-    margin: 30px 0px;
-    border: 1px solid #828282d4;
+.divider {
+  margin: 30px 0px;
+  border: 1px solid #828282d4;
 }
-.menu{
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.menu {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.grid img {
+  width: 100%;
+  border-radius: 15px;
+  transition: all 0.2s ease-out;
+}
+.grid img:hover {
+  scale: 1.05;
+}
+.grid {
+  gap: 15px;
+  padding: 30px 0px;
+  display: grid;
+  grid-template-areas: "G1 G1 G2 G3" "G1 G1 G2 G7" "G4 G5 G6 G7";
+}
+.item1 {
+  grid-area: G1;
+}
+.item2 {
+  grid-area: G2;
+}
+.item3 {
+  grid-area: G3;
+}
+.item4 {
+  grid-area: G4;
+}
+.item5 {
+  grid-area: G5;
+}
+.item6 {
+  grid-area: G6;
+}
+.item7 {
+  grid-area: G7;
+}
+footer {
+  background-color: rgba(201, 191, 191, 0.793);
+  padding: 40px 0px;
+}
+.logo-contain {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+.footer {
+  max-width: 1250px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer-links ul li {
+  list-style-type: none;
+  padding: 5px 0px;
+}
+.footer-links ul li a {
+  color: #000;
+  text-decoration: none;
+}
+.newsletter input {
+  border-radius: 5px;
+  padding: 8px 5px;
+  width: 180px;
+  outline: none;
+  border: none;
+}
+.social-logos {
+  margin: 15px 0px;
 }
 
-.grid{
-    display: grid;
-    grid-template-areas: "G1 G1 G2 G3" "G1 G1 G2 G7" "G4 G5 G6 G7" ;
+.logo {
+  cursor: pointer;
+  padding: 10px 6px;
+  font-size: 20px;
+  transition: all 0.5s ease;
 }
-.item1{
-   grid-area: G1; 
+.logo:hover {
+  color: green;
+  transform: translatey(-5px);
+  /* scale: 1.5; */
 }
-.item2{
-    grid-area: G2; 
-}
-.item3{
-    grid-area: G3; 
-}
-.item4{
-    grid-area: G4; 
-}
-.item5{
-    grid-area: G5; 
-}
-.item6{
-    grid-area: G6; 
-}
-.item7{
-    grid-area: G75;
+.support {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
